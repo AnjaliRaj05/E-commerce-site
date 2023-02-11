@@ -6,6 +6,7 @@ import Home from './Component/HomeSection/Home';
 import Products from './Component/ProductSection/Products';
 import Footer from './Component/FooterSection/Footer';
 
+
 // import {Switch,Route} from'react-router-dom';
 
 
@@ -23,6 +24,7 @@ function App() {
 
 <Home/>
 <Products/>
+
 <Footer/>
 {/* </Switch>   */}
    
