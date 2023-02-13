@@ -14,10 +14,11 @@ height:70px;
 .btn2{
     background:#415f77;
     color: white;
-    padding:8px;
+    padding:10px;
     margin:5px;
     cursor: pointer;
     margin-bottom: 10px;
+    /* width:150px; */
     
     
 

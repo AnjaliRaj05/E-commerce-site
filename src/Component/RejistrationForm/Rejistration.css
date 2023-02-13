@@ -1,0 +1,38 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+.R-cover{
+    background:#415f77;
+    width: 100%;
+    height:700px;
+}
+.R-h{
+    color:white;
+    font-weight:900;
+    font-family:"poppins";
+}
+.s-h{
+    color:black;
+    text-align: center;
+    font-family:poppins;
+    font-size:20px;
+}
+.R-form{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px;
+    width:450px;
+    height:500px;
+    border: 1px solid black;
+    margin-left: 35%;
+    padding:60px;
+    
+
+}

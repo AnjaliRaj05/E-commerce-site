@@ -1,4 +1,5 @@
 import React,{useState,useEffect}from 'react';
+import { NavLink } from 'react-router-dom';
 import './Products.css'
 
 export default function Products() {
@@ -29,7 +30,7 @@ getProducts();
 },[]);
 
 const Loading=()=>{
-  return <> Loading...</>;
+  return <> Loading.....</>;
   
 };
 
@@ -62,7 +63,9 @@ const ShowProducts=()=>{
         <div className="card-body">
           <h5>{product.title}</h5>
           <p>${product.price}</p>
-          <button className="p-btn">Buy Now</button>
+          {/* //<button className="p-btn">Buy Now</button> */}
+          {/* <button>< NavLink to="/products/${product.id}">Buy Now</NavLink></button> */}
+          <NavLink to={`/products/${product.id}`} className="btn btn-dark ms-2 px-3 py-2">Buy Now</NavLink>
         </div>
       </div>
     </div>
