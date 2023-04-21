@@ -1,7 +1,7 @@
 import React from 'react'
 // import Products from '../ProductSection/Products'
 // import Navbar from '../NavSection/Navbar';
-import  img from '../../images/bgg.jpg';
+import  img from '../../images/main.jpeg';
 import 'react-slideshow-image/dist/styles.css';
 import {Fade,Zoom,Slide}  from 'react-slideshow-image';
 import './Home.css'
@@ -17,9 +17,9 @@ export default function Home() {
       <div>
   <img src={img} className="bg-part"></img>
   </div>
-  <div>
+  <div className="below-bg">
     
-      <p>New Season Arrival</p>
+      <p className="p-new">New Season Arrival</p>
       <marquee >
       <p>Check in or check out?</p>
       </marquee>

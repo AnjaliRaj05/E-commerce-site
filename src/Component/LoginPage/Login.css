@@ -3,11 +3,8 @@
     padding: 0;
 }
 .cover{
-    background: #415f77;
-    width:100%;
-    height:700px;
-}
-.f-l{
+    background: #F2AA4CFF;
+
     color:white;
     font-family: poppins;
     padding:15px;
@@ -37,11 +34,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 400px;
-    height:400px;
+    width: 410px;
+    height:500px;
     border: 1px solid black;
     box-sizing: border-box;
-    box-shadow: 10px 10px 10px;
+    /* box-shadow: 5px 5px 2px 0px; */
+    /* box-shadow: 10px 4px 5px #F2AA4CFF; */
+    box-shadow: 10px 10px 10px black;
     border-radius: 5px;
     margin-left: 38%;
     padding:30px;

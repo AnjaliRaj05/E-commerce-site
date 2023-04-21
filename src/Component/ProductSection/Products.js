@@ -45,8 +45,8 @@ const ShowProducts=()=>{
     <div className="btn-part">
       
     <button className="btn2" onClick={()=>setFilter(data)}>All</button>
-    <button className="btn2" onClick={()=>filterProduct("men's clothing")}>Men's Clothing</button>
-    <button className="btn2"onClick={()=>filterProduct("women's clothing")}>Women's Clothing</button>
+    <button className="btn2" onClick={()=>filterProduct("men's clothing")}>Men</button>
+    <button className="btn2"onClick={()=>filterProduct("women's clothing")}>Women</button>
     <button className="btn2" onClick={()=>filterProduct("jewelery")}>Jewelery</button>
     <button className="btn2" onClick={()=>filterProduct("electronics")}>electronic</button>
     
@@ -69,6 +69,7 @@ const ShowProducts=()=>{
         </div>
       </div>
     </div>
+    
 
     
     </>
@@ -83,7 +84,7 @@ const ShowProducts=()=>{
     <>
     <div>
     <div className="container">
-     <h1 className="head-part">latest Products</h1> 
+     <h1 className="head-part">Latest Products</h1> 
      <hr/>
     </div>
     <div className="row">
