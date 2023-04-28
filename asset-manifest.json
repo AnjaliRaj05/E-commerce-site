@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/AnjaliRaj05/E-commerce-site/static/css/main.ca1e82af.css",
+    "main.js": "/AnjaliRaj05/E-commerce-site/static/js/main.6a1834c4.js",
+    "static/js/787.4123b6e3.chunk.js": "/AnjaliRaj05/E-commerce-site/static/js/787.4123b6e3.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/AnjaliRaj05/E-commerce-site/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/AnjaliRaj05/E-commerce-site/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/AnjaliRaj05/E-commerce-site/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/main.jpeg": "/AnjaliRaj05/E-commerce-site/static/media/main.897411359b8f26c53a17.jpeg",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/AnjaliRaj05/E-commerce-site/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/npic.png": "/AnjaliRaj05/E-commerce-site/static/media/npic.469935df2cd934734545.png",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/AnjaliRaj05/E-commerce-site/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/aboutpic.jpg": "/AnjaliRaj05/E-commerce-site/static/media/aboutpic.a6db7905d5796ffa300c.jpg",
+    "static/media/contactpic.jpg": "/AnjaliRaj05/E-commerce-site/static/media/contactpic.631b69d4eb318f4d3363.jpg",
+    "index.html": "/AnjaliRaj05/E-commerce-site/index.html",
+    "main.ca1e82af.css.map": "/AnjaliRaj05/E-commerce-site/static/css/main.ca1e82af.css.map",
+    "main.6a1834c4.js.map": "/AnjaliRaj05/E-commerce-site/static/js/main.6a1834c4.js.map",
+    "787.4123b6e3.chunk.js.map": "/AnjaliRaj05/E-commerce-site/static/js/787.4123b6e3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca1e82af.css",
+    "static/js/main.6a1834c4.js"
+  ]
+}
