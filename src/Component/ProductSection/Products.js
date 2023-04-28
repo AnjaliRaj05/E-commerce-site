@@ -1,6 +1,9 @@
 import React,{useState,useEffect}from 'react';
 import { NavLink } from 'react-router-dom';
 import './Products.css'
+import Skeleton from 'react-loading-skeleton';
+// import Navbar from '../NavSection/Navbar';
+
 
 export default function Products() {
 
@@ -30,7 +33,14 @@ getProducts();
 },[]);
 
 const Loading=()=>{
-  return <> Loading.....</>;
+  return <> Loading.....
+  {/* <Skeleton height={350}></Skeleton> */}
+  <div className="col-md-3"> 
+  <Skeleton height={350}></Skeleton></div>
+  <div className="col-md-3"> 
+  <Skeleton height={350}></Skeleton></div>
+  
+  </>;
   
 };
 
@@ -42,6 +52,7 @@ const ShowProducts=()=>{
 
   return (
     <>
+
     <div className="btn-part">
       
     <button className="btn2" onClick={()=>setFilter(data)}>All</button>
@@ -58,10 +69,10 @@ const ShowProducts=()=>{
     <>
    
     <div className="col-md-3">
-      <div className="card">
-        <img src={product.image} className="card-img-top" alt={product.title}/>
+      <div className="card h-100 text-center p-4" key={product.id}>
+        <img src={product.image} className="card-img-top" alt={product.title} height="250px"/>
         <div className="card-body">
-          <h5>{product.title}</h5>
+          <h5 className="card-title mb-0">{product.title.substring(0, 12)}</h5>
           <p>${product.price}</p>
           {/* //<button className="p-btn">Buy Now</button> */}
           {/* <button>< NavLink to="/products/${product.id}">Buy Now</NavLink></button> */}
@@ -82,7 +93,9 @@ const ShowProducts=()=>{
 };
   return (
     <>
+        {/* <Navbar/> */}
     <div>
+
     <div className="container">
      <h1 className="head-part">Latest Products</h1> 
      <hr/>

@@ -1,13 +1,21 @@
 import React,{useState,useEffect}from 'react';
+import { useDispatch } from 'react-redux';
+//import { useDispatch } from 'react-redux';
+import { addCart } from '../../redux/action';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
-
-
+import Skeleton from 'react-loading-skeleton';
 export default function Product() {
 
   const{id}=useParams();
   const[product,setProduct]=useState([]);
   const[loading,setLoading]=useState(false);
+
+  const dispatch=useDispatch();
+
+  const addProduct=(product)=>{
+    dispatch(addCart(product));
+  }
 
   useEffect(()=> {
 
@@ -24,8 +32,20 @@ export default function Product() {
 const Loading =() => {
 return (
   <>
+  <div className="col-md-6" style={{lineHeight:2}} >
+    <Skeleton height={400}/>
+  </div>
+  <div className="col-md-6">
+    <Skeleton height={50} width={300}/>
+    <Skeleton height={70}/>
+    <Skeleton height={30} width={150}/>
+    <Skeleton height={150}/>
+    <Skeleton height={50} width={100}/>
+    <Skeleton height={50} width={100} style={{marginLeft:6}}/>
+  </div>
+  
   Loading.....
-  <p>html</p>
+
   </>
 )
 
@@ -33,6 +53,7 @@ return (
 const ShowProduct =() =>{
   return(
     <>
+   
     <div className="col-md-6">
     <img src={product.image} alt={product.title} height="400px" width="400"/>
    </div>
@@ -41,11 +62,14 @@ const ShowProduct =() =>{
       {product.category}
     </h4>
     <h1 className="display-5">{product.title}</h1>
-    <p className="lead fm-bolder">Rating{product.rating && product.rating.rate}</p>
-    <i className="fa fa-star"></i>
+    <p className="lead fm-bolder">
+      Rating{product.rating && product.rating.rate}
+    <i className="fa fa-star"></i></p>
     <h3 className="display-6 fw-bold my-4">${product.price}</h3>
    <p className="lead fm-bolder">{product.description}</p>
-   <button className="btn btn-outline-dark px-4 py-2">Add to cart</button>
+   <button className="btn btn-outline-dark px-4 py-2"
+   onClick={()=>addProduct(product)}>
+    Add to cart</button>
    <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">Go to Cart</NavLink>
    </div>
   
@@ -61,7 +85,9 @@ const ShowProduct =() =>{
         </div>
 
       </div>
+
     </div>
+   
     </>
   )
 }
